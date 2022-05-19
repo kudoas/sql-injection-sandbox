@@ -10,7 +10,7 @@ services:
       - POSTGRES_PASSWORD=postgres
 
   web:
-    container_name: django-db_v4.0.4
+    container_name: django-app_v4.0.4
     build: .
     volumes:
       - .:/code
