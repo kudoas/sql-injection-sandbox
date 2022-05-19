@@ -2,6 +2,7 @@ version: "3"
 
 services:
   db:
+    container_name: django-db_v4.0.3
     image: postgres
     environment:
       - POSTGRES_DB=postgres
@@ -9,6 +10,7 @@ services:
       - POSTGRES_PASSWORD=postgres
 
   web:
+    container_name: django-app_v4.0.3
     build: .
     volumes:
       - .:/code
